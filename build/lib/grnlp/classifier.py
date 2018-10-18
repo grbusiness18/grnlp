@@ -4,7 +4,7 @@ import fasttext as fs
 from pathlib import Path
 from nltk.tokenize import WordPunctTokenizer
 import numpy as np
-from typing import List, Any, Tuple, Dict
+from typing import List, Any, Tuple
 from keras.models import model_from_json
 import pickle
 import os
@@ -21,7 +21,7 @@ class TextClassifier:
             TextClassifier()
         return TextClassifier.__instance
 
-    def __init__(self, model_path: Dict):
+    def __init__(self, model_path: {}):
 
         if TextClassifier.__instance != None:
             raise Exception("This class is a singleton!")

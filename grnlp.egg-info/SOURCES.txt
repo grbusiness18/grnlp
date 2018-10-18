@@ -1,4 +1,5 @@
 README.md
+setup.py
 grnlp/__init__.py
 grnlp/classifier.py
 grnlp.egg-info/PKG-INFO
