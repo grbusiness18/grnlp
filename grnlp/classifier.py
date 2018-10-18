@@ -58,7 +58,7 @@ class TextClassifier:
             print(self.__CLASSES)
 
 
-    def __fs_wv(self, word: str, size: int)->List[float]:
+    def __fs_wv(self, word:"", size=0):
         if word in self.__wv:
             return self.__wv[word]
         else:
@@ -70,7 +70,7 @@ class TextClassifier:
             return self.__wv[word]
 
 
-    def __generate_features(self, sentences: List[str])->Any:
+    def __generate_features(self, sentences=[]):
         features = []
         for sent in sentences:
             wvectors = []
@@ -94,7 +94,7 @@ class TextClassifier:
         return np.array(features)
 
 
-    def predict(self, sentence: str)-> Tuple[str, float]:
+    def predict(self, sentence=""):
         if sentence == "":
             raise "Empty Text"
 
