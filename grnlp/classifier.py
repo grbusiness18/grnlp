@@ -21,7 +21,7 @@ class TextClassifier:
             TextClassifier()
         return TextClassifier.__instance
 
-    def __init__(self, model_path: Dict):
+    def __init__(self, model_path={}):
 
         if TextClassifier.__instance != None:
             raise Exception("This class is a singleton!")
