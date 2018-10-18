@@ -58,7 +58,7 @@ class TextClassifier:
             print(self.__CLASSES)
 
 
-    def __fs_wv(self, word:"", size=0):
+    def __fs_wv(self, word="", size=0):
         if word in self.__wv:
             return self.__wv[word]
         else:
