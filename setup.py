@@ -13,7 +13,7 @@ setuptools.setup(
     long_description="GRNLP for Text Classification",
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
-    install_requires=["fasttext", "keras", "tensorflow", "numpy"],
+    install_requires=["fasttext", "keras", "tensorflow", "numpy", "Cython"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

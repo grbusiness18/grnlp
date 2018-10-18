@@ -1,5 +1,7 @@
 tensorflow
 keras
 numpy
+Cython
 fasttext
 nltk
+h5py
